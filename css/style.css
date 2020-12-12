@@ -1,0 +1,255 @@
+@import "./fonts.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* -----HEADER----- */
+.header {
+  padding: 40px 0;
+}
+.cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 484px;
+}
+.logo-link {
+  font-size: 36px;
+  font-family: "Meie Script", serif;
+  color: #fed136;
+  line-height: 1;
+}
+
+.nav-link {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  color: #fed136;
+}
+
+
+/* ------SERVICES----- */
+
+.services {
+  padding: 62px 0 122px;
+  text-align: center;
+}
+
+.section-headline {
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.curs-text {
+  font-size: 16px;
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  color: #777777;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-list-item {
+  flex: 0 0 290px;
+  padding-top: 100px;
+  position: relative;
+}
+
+.service-title {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.service-desc {
+  font-size: 14px;
+  font-family: "RobotoSlab", serif;
+  color: #777777;
+  line-height: 1.7;
+}
+
+.services-list-item::before {
+  content: "";
+  width: 74px;
+  height: 74px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.basket::before {
+  background-image: url(../img/icon-basket.png);
+}
+
+.laptop::before {
+  background-image: url(../img/icon-laptop.png);
+}
+.locked::before {
+  background-image: url(../img/icon-locked.png);
+}
+
+
+/* -----FOOTER----- */
+
+
+.footer {
+  background-image: url(../img/Background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 110px 0;
+}
+
+.footer-headline {
+  color: #ffffff;
+  text-align: center;
+}
+
+.form-cont {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.user-inputs {
+  flex: 0 0 456px;
+}
+
+.footer-input {
+  display: block;
+  width: 100%;
+  height: 54px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  padding: 0 22px;
+}
+
+.footer-input:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.footer-textarea {
+  flex: 0 0 456px;
+  resize: none;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.footer-input::placeholder,
+.footer-textarea::placeholder {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #bbbbbb;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.footer-input:focus:valid,
+.footer-textarea:focus:valid{
+  outline: 2px solid #008000;
+}
+.footer-input:focus:invalid,
+.footer-textarea:focus:invalid{
+  outline: 2px solid #ff0000;
+}
+
+.footer-btn {
+  border-radius: 3px;
+  background-color: #fed136;
+  color: #ffffff;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  height: 66px;
+  min-width: 240px;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
